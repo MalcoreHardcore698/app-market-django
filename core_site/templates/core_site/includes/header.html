@@ -1,0 +1,15 @@
+{% block header %}
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Title</title>
+
+       {% block links %}{% include "core_site/includes/links.html" %}{% endblock %}
+
+    </head>
+    <body>
+    {% block menu %}
+        {% include "core_site/includes/menu.html" %}
+    {% endblock %}
+{% endblock %}
